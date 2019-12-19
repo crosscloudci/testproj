@@ -7,4 +7,4 @@ jobs:
       - checkout
       - run:
           name: "testing"
-          command: rspec spec
+          command: bundle; rspec spec
