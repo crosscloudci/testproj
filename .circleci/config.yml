@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: ruby:2.6.5-alpine
+    steps:
+      - checkout
+      - run:
+          name: "testing"
+          command: bundle; rspec spec
